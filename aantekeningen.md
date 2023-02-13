@@ -18,78 +18,78 @@ Zelfde (bovenstaande) geldt voor de positie en het seizoen.
 ## Paramter Overzicht
 |Parameter|Opmerking|
 |---------|------------------------|
-|total.matches|
-|total.matchesInStart|
-|total.matchesSubstituted|
-|total.matchesComingOff|
-|total.minutesOnField|
-|total.minutesTagged|
-|total.goals|
-|total.assists|
-|total.shots|
-|total.headShots|
-|total.yellowCards|
-|total.redCards|
-|total.directRedCards|
-|total.penalties|
-|total.linkupPlays|
-|total.duels|
-|total.duelsWon|
-|total.defensiveDuels|
-|total.defensiveDuelsWon|
-|total.offensiveDuels|
-|total.offensiveDuelsWon|
-|total.aerialDuels|
-|total.aerialDuelsWon|
-|total.fouls|
+|total.matches|Uniek|
+|total.matchesInStart|kan niet hoger zijn dan total.matches|
+|total.matchesSubstituted|kan niet hoger zijn dan (total.matches - total.matchesInStart)|
+|total.matchesComingOff|kan niet hoger zijn dan total.matches|
+|total.minutesOnField|kan niet hoger zijn dan (total.matches * 90)|
+|total.minutesTagged|kan niet hoger zijn dan (total.matches * 90)|
+|total.goals|Uniek|
+|total.assists|Uniek|
+|total.shots|Uniek|
+|total.headShots|Uniek|
+|total.yellowCards|Uniek|
+|total.redCards|kan niet hoger zijn dan total.matches|
+|total.directRedCards|kan niet hoger zijn dan total.redCards|
+|total.penalties|Uniek|
+|total.linkupPlays|Uniek|
+|total.duels|(total.defensiveDuel + total.offensiveDuels + total.aerialDuels)|
+|total.duelsWon|(total.defensiveDuelWon + total.offensiveDuelsWon + total.aerialDuelsWon)|
+|total.defensiveDuels|Uniek|
+|total.defensiveDuelsWon|Uniek, maar kan niet hoger zijn dan total.defensiveDuels|
+|total.offensiveDuels|Uniek|
+|total.offensiveDuelsWon|Uniek, maar kan niet hoger zijn dan total.offensiveDuels|
+|total.aerialDuels|Uniek|
+|total.aerialDuelsWon|Uniek, maar kan niet hoger zijn dan total.aerialDuels|
+|total.fouls|Uniek|
 |total.passes|
 |total.successfulPasses|
-|total.smartPasses|
-|total.successfulSmartPasses|
-|total.passesToFinalThird|
-|total.successfulPassesToFinalThird|
+|total.smartPasses|Uniek|
+|total.successfulSmartPasses|Uniek, maar niet hoger dan total.smartPasses|
+|total.passesToFinalThird|Uniek|
+|total.successfulPassesToFinalThird|Uniek, maar niet hoger dan total.passesToFinalThird|
 |total.crosses|
-|total.successfulCrosses|
+|total.successfulCrosses|Uniek, maar niet hoger dan total.crosses|
 |total.forwardPasses|
-|total.successfulForwardPasses|
+|total.successfulForwardPasses|Uniek, maar niet hoger dan total.forwardPasses|
 |total.backPasses|
-|total.successfulBackPasses|
+|total.successfulBackPasses|Uniek, maar niet hoger dan total.backPasses|
 |total.throughPasses|
-|total.successfulThroughPasses|
+|total.successfulThroughPasses|Uniek, maar niet hoger dan total.throughPasses|
 |total.keyPasses|
-|total.successfulKeyPasses|
+|total.successfulKeyPasses|Uniek, maar niet hoger dan total.keyPasses|
 |total.verticalPasses|
-|total.successfulVerticalPasses|
+|total.successfulVerticalPasses|Uniek, maar niet hoger dan total.verticalPasses|
 |total.longPasses|
-|total.successfulLongPasses|
+|total.successfulLongPasses|Uniek, maar niet hoger dan total.longPasses|
 |total.dribbles|
-|total.successfulDribbles|
+|total.successfulDribbles|Uniek, maar niet hoger dan total.dribbles|
 |total.interceptions|
 |total.defensiveActions|
-|total.successfulDefensiveAction|
+|total.successfulDefensiveAction|Uniek, maar niet hoger dan total.defensiveActions|
 |total.attackingActions|
-|total.successfulAttackingActions|
+|total.successfulAttackingActions|Uniek, maar niet hoger dan total.attackingActions|
 |total.freeKicks|
-|total.freeKicksOnTarget|
+|total.freeKicksOnTarget|Uniek, maar niet hoger dan total.freeKicks|
 |total.directFreeKicks|
-|total.directFreeKicksOnTarget|
+|total.directFreeKicksOnTarget|Uniek, maar niet hoger dan total.directFreeKicks of total.freeKicksOnTarget|
 |total.corners|
-|total.successfulPenalties|
-|total.successfulLinkupPlays|
+|total.successfulPenalties|Uniek, maar niet hoger dan total.penalties|
+|total.successfulLinkupPlays|Uniek, maar niet hoger dan total.linkupPlays|
 |total.accelerations|
 |total.pressingDuels|
-|total.pressingDuelsWon|
+|total.pressingDuelsWon|Uniek, maar niet hoger dan total.pressingDuels|
 |total.looseBallDuels|
-|total.looseBallDuelsWon|
+|total.looseBallDuelsWon|Uniek, maar niet hoger dan total.looseBallDuels|
 |total.missedBalls|
 |total.shotAssists|
 |total.shotOnTargetAssists|
 |total.recoveries|
 |total.opponentHalfRecoveries|
-|total.dangerousOpponentHalfRecoveries|
+|total.dangerousOpponentHalfRecoveries|Uniek, maar niet hoger dan total.opponentHalfRecoveries|
 |total.losses|
 |total.ownHalfLosses|
-|total.dangerousOwnHalfLosses|
+|total.dangerousOwnHalfLosses|Uniek, maar niet hoger dan total.ownHalfLosses|
 |total.xgShot|
 |total.xgAssist|
 |total.xgSave|
@@ -111,9 +111,9 @@ Zelfde (bovenstaande) geldt voor de positie en het seizoen.
 |total.goalKicksShort|
 |total.goalKicksLong|
 |total.shotsOnTarget|
-|total.successfulProgressivePasses|
-|total.successfulSlidingTackles|
-|total.successfulGoalKicks|
+|total.successfulProgressivePasses|Uniek, maar niet hoger dan total.progressivePasses|
+|total.successfulSlidingTackles|Uniek, maar niet hoger dan total.slidingTackles|
+|total.successfulGoalKicks|Uniek, maar niet hoger dan total.goalKicks|
 |total.fieldAerialDuels|
 |total.fieldAerialDuelsWon|
 |total.gkCleanSheets|
@@ -129,4 +129,4 @@ Zelfde (bovenstaande) geldt voor de positie en het seizoen.
 |total.newOffensiveDuelsWon|
 |total.newSuccessfulDribbles|
 |total.lateralPasses|
-|total.successfulLateralPasses|
+|total.successfulLateralPasses|Uniek, maar niet hoger dan total.lateralPasses|
