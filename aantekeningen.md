@@ -128,5 +128,5 @@ Zelfde (bovenstaande) geldt voor de positie en het seizoen.
 |total.newDefensiveDuelsWon|
 |total.newOffensiveDuelsWon|
 |total.newSuccessfulDribbles|
-|total.lateralPasses|
-|total.successfulLateralPasses|Uniek, maar niet hoger dan total.lateralPasses|
+|total.lateralPasses|Is zelfde als total.verticalPasses|
+|total.successfulLateralPasses|Is zelfde als total.successfulVerticalPasses|
