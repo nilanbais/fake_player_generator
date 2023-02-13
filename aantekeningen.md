@@ -29,38 +29,38 @@ Zelfde (bovenstaande) geldt voor de positie en het seizoen.
 |total.shots|Uniek|
 |total.headShots|Uniek|
 |total.yellowCards|Uniek|
-|total.redCards|kan niet hoger zijn dan total.matches|
-|total.directRedCards|kan niet hoger zijn dan total.redCards|
+|total.redCards|niet hoger zijn dan total.matches|
+|total.directRedCards|niet hoger zijn dan total.redCards|
 |total.penalties|Uniek|
 |total.linkupPlays|Uniek|
-|total.duels|(total.defensiveDuel + total.offensiveDuels + total.aerialDuels)|
-|total.duelsWon|(total.defensiveDuelWon + total.offensiveDuelsWon + total.aerialDuelsWon)|
+|total.duels|(total.defensiveDuel + total.offensiveDuels + total.aerialDuels + total.looseBallDuels)|
+|total.duelsWon|(total.defensiveDuelWon + total.offensiveDuelsWon + total.aerialDuelsWon + total.looseBallDuelsWon)|
 |total.defensiveDuels|Uniek|
-|total.defensiveDuelsWon|Uniek, maar kan niet hoger zijn dan total.defensiveDuels|
+|total.defensiveDuelsWon|Uniek, maar niet hoger zijn dan total.defensiveDuels|
 |total.offensiveDuels|Uniek|
-|total.offensiveDuelsWon|Uniek, maar kan niet hoger zijn dan total.offensiveDuels|
+|total.offensiveDuelsWon|Uniek, maar niet hoger zijn dan total.offensiveDuels|
 |total.aerialDuels|Uniek|
-|total.aerialDuelsWon|Uniek, maar kan niet hoger zijn dan total.aerialDuels|
+|total.aerialDuelsWon|Uniek, maar niet hoger zijn dan total.aerialDuels|
 |total.fouls|Uniek|
-|total.passes|
-|total.successfulPasses|
+|total.passes|(total.smartPasses + total.passesToFinalThird + total.forwardPasses + total.backPasses + total.keyPasses + total.verticalPasses + total.longPasses)|
+|total.successfulPasses|(total.successfulSmartPasses + total.successfulPassesToFinalThird + total.successfulForwardPasses + total.successfulBackPasses + total.successfulKeyPasses + total.successfulVerticalPasses + total.successfulLongPasses)|
 |total.smartPasses|Uniek|
 |total.successfulSmartPasses|Uniek, maar niet hoger dan total.smartPasses|
 |total.passesToFinalThird|Uniek|
 |total.successfulPassesToFinalThird|Uniek, maar niet hoger dan total.passesToFinalThird|
-|total.crosses|
+|total.crosses|Uniek|
 |total.successfulCrosses|Uniek, maar niet hoger dan total.crosses|
-|total.forwardPasses|
+|total.forwardPasses|Uniek|
 |total.successfulForwardPasses|Uniek, maar niet hoger dan total.forwardPasses|
-|total.backPasses|
+|total.backPasses|Uniek|
 |total.successfulBackPasses|Uniek, maar niet hoger dan total.backPasses|
-|total.throughPasses|
+|total.throughPasses|Uniek|
 |total.successfulThroughPasses|Uniek, maar niet hoger dan total.throughPasses|
-|total.keyPasses|
+|total.keyPasses|Uniek|
 |total.successfulKeyPasses|Uniek, maar niet hoger dan total.keyPasses|
-|total.verticalPasses|
+|total.verticalPasses|Uniek|
 |total.successfulVerticalPasses|Uniek, maar niet hoger dan total.verticalPasses|
-|total.longPasses|
+|total.longPasses|Uniek|
 |total.successfulLongPasses|Uniek, maar niet hoger dan total.longPasses|
 |total.dribbles|
 |total.successfulDribbles|Uniek, maar niet hoger dan total.dribbles|
@@ -77,9 +77,9 @@ Zelfde (bovenstaande) geldt voor de positie en het seizoen.
 |total.successfulPenalties|Uniek, maar niet hoger dan total.penalties|
 |total.successfulLinkupPlays|Uniek, maar niet hoger dan total.linkupPlays|
 |total.accelerations|
-|total.pressingDuels|
+|total.pressingDuels|Uniek, maar niet hoger dan total.duels|
 |total.pressingDuelsWon|Uniek, maar niet hoger dan total.pressingDuels|
-|total.looseBallDuels|
+|total.looseBallDuels|Uniek|
 |total.looseBallDuelsWon|Uniek, maar niet hoger dan total.looseBallDuels|
 |total.missedBalls|
 |total.shotAssists|
